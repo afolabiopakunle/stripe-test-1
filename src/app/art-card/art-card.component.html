@@ -12,7 +12,7 @@
       {{ artCard.artSummary | slice:0:170 }}...
     </p>
   </mat-card-content>
-  <mat-card-actions>
+  <mat-card-actions style="display: flex; justify-content: space-around;">
     <button mat-button><strong>{{ artCard.price | currency }}</strong></button>
     <button mat-raised-button color="accent" (click)="initializePayment(artCard.price)">BUY</button>
   </mat-card-actions>

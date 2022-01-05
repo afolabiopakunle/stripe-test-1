@@ -1,11 +1,16 @@
 <div style="display: flex; flex-wrap: wrap;">
-  <div style="flex: 25%; max-width: 33.3333333333%; padding: 0 4px;">
+  <div class="art-column">
     <ng-container *ngFor="let artCard of artCardsList | slice:0:3; let i=index">
       <app-art-card [artCard]="artCard"></app-art-card>
     </ng-container>
   </div>
-  <div style="  flex: 25%; max-width: 33.3333333333%; padding: 0 4px;">
+  <div class="art-column">
     <ng-container *ngFor="let artCard of artCardsList | slice:3:5; let i=index">
+      <app-art-card [artCard]="artCard"></app-art-card>
+    </ng-container>
+  </div>
+   <div class="art-column">
+    <ng-container *ngFor="let artCard of artCardsList | slice:5:10; let i=index">
       <app-art-card [artCard]="artCard"></app-art-card>
     </ng-container>
   </div>

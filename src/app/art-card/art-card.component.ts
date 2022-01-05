@@ -30,7 +30,7 @@ export class ArtCardComponent implements OnInit {
 
     paymentHandler.open({
       name: 'Afolabi\'s Stripe ArtWorld',
-      description: 'Get yourself an artwork',
+      description: 'Enter 4242 4242 4242 4242 n date',
       amount: amount * 100
     });
   }
