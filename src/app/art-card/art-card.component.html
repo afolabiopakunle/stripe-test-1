@@ -1,0 +1,19 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{ artCard.artTitle}}</mat-card-title>
+    <mat-card-subtitle>{{ artCard.artist }}</mat-card-subtitle>
+  </mat-card-header>
+  <div>
+    <!-- style="max-height: 200px; overflow: hidden; display: flex; justify-content: center; align-items: center;" -->
+    <img mat-card-image style="max-height: 100%;" [src]="artCard.artworkURL" alt="Rainwalk">
+  </div>
+  <mat-card-content>
+    <p>
+      {{ artCard.artSummary | slice:0:170 }}...
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button><strong>{{ artCard.price | currency }}</strong></button>
+    <button mat-raised-button color="primary" (click)="initializePayment(artCard.price)">BUY</button>
+  </mat-card-actions>
+</mat-card>
