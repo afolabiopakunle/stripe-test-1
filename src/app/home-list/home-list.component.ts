@@ -48,6 +48,13 @@ export class HomeListComponent implements OnInit {
       artworkURL: 'https://5.imimg.com/data5/SY/UG/MY-11213044/056-500x500.jpg',
       artTitle: 'East Africa',
       price: 22,
+    },
+    {
+      artist: 'Suleiman Babangida',
+      artSummary: 'As you can see, it’s not a sports game scoring like any other visa. Once you figured that you seem to tick a few boxes, now it’s really your job to position yourself as an “exceptional talent” and paint the picture with your work history, documents, what you have built before, what you are building, etc.',
+      artworkURL: 'https://5.imimg.com/data5/SY/UG/MY-11213044/056-500x500.jpg',
+      artTitle: 'East Africa',
+      price: 22,
     }
   ]
 
